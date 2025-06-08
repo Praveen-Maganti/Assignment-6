@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+    .bg-container{
+        background-image:url("https://th.bing.com/th/id/OIP.X_rMGjV-QFVMxh3aeOD1HAHaE8?rs=1&pid=ImgDetMain");
+        background-size:cover;
+        height:100vh;
+        width:100vw;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }
+    .overlay-box{
+        background-color: rgba(0, 0, 0, 0.75);
+        height:55vh;
+        width:30vw;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }
+    .button{
+        background-color: green;
+        font-size:20px;
+        width:20vw;
+        height:6vh;
+        color:white;
+        font-weight:bold;
+        box-shadow: 2px 2px  white;
+
+    }
+    .h1{
+        color:white;
+        font-weight:bold;
+        font-size:20px;
+        margin-top:19px;
+    }
+    .horizontalDiv{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        padding:10px;
+        gap:5px;
+        font-size:15px;
+        color:white;
+    }
+    .box {
+    background-color: transparent;  
+    border: none;                   
+    border-bottom: 2px solid white; 
+    color: white;                
+    width: 80%;
+    padding: 8px 0;
+    font-size: 18px;
+    outline: none;       
+    }
+    .img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        margin-top: -110px; 
+    }
+
+
+</style>
+<body>
+    <div class="bg-container">
+        <div class="overlay-box">
+            <img src="https://thumbs.dreamstime.com/b/colorful-simple-flat-vector-ffice-worker-icon-symbol-people-concept-vector-illustration-colorful-simple-flat-vector-ffice-246498020.jpg" class="img">
+             <h1 class="h1">LOGIN WINDOW</h1>
+
+             <input type="text" style="margin-top:30px;" class="box" placeholder="Your Email Address" required id="Email" name="EmailAddress">
+
+             <input type="text" style="margin-top:30px;" class="box" placeholder="Your Password" required id="password" name="Password">
+             <div class="horizontalDiv">
+                <input type="checkbox" style="accent-color:blue;" id="TermsANDConditions">
+                <p style="text-align:center;margin-top:16px;color:white;">Agree with</p>
+                <a href="nothning" style="color:white;">Terms & Conditions</a>
+             </div>
+             <div>
+                <button class="button">Login</button>
+             </div>
+        </div>
+
+    </div>
+</body>
+</html>
